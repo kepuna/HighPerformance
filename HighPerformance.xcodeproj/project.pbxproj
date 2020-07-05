@@ -14,6 +14,9 @@
 		B14C9BA6234D8C2600DAE2B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14C9BA4234D8C2600DAE2B3 /* LaunchScreen.storyboard */; };
 		B14C9BA9234D8C2600DAE2B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B14C9BA8234D8C2600DAE2B3 /* main.m */; };
 		B14C9BB3234D8C2700DAE2B3 /* HighPerformanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B14C9BB2234D8C2700DAE2B3 /* HighPerformanceTests.m */; };
+		FA90B18B24A9989F00FCCB9D /* ZZPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = FA90B18924A9989F00FCCB9D /* ZZPerson.m */; };
+		FA90B18C24A9989F00FCCB9D /* ZZLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = FA90B18A24A9989F00FCCB9D /* ZZLanguage.m */; };
+		FA90B19024A9991300FCCB9D /* ZZHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = FA90B18F24A9991300FCCB9D /* ZZHuman.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		B14C9BAE234D8C2700DAE2B3 /* HighPerformanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HighPerformanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B14C9BB2234D8C2700DAE2B3 /* HighPerformanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HighPerformanceTests.m; sourceTree = "<group>"; };
 		B14C9BB4234D8C2700DAE2B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA90B18724A9989F00FCCB9D /* ZZPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPerson.h; sourceTree = "<group>"; };
+		FA90B18824A9989F00FCCB9D /* ZZLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZLanguage.h; sourceTree = "<group>"; };
+		FA90B18924A9989F00FCCB9D /* ZZPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPerson.m; sourceTree = "<group>"; };
+		FA90B18A24A9989F00FCCB9D /* ZZLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZLanguage.m; sourceTree = "<group>"; };
+		FA90B18E24A9991300FCCB9D /* ZZHuman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZHuman.h; sourceTree = "<group>"; };
+		FA90B18F24A9991300FCCB9D /* ZZHuman.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZHuman.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,8 @@
 		B14C9B98234D8C2600DAE2B3 /* HighPerformance */ = {
 			isa = PBXGroup;
 			children = (
+				FA90B18D24A998BB00FCCB9D /* 弱引用集合 */,
+				FA90B18624A9989F00FCCB9D /* 泛型 */,
 				B14C9B99234D8C2600DAE2B3 /* AppDelegate.h */,
 				B14C9B9A234D8C2600DAE2B3 /* AppDelegate.m */,
 				B14C9B9C234D8C2600DAE2B3 /* ViewController.h */,
@@ -101,6 +112,26 @@
 				B14C9BB4234D8C2700DAE2B3 /* Info.plist */,
 			);
 			path = HighPerformanceTests;
+			sourceTree = "<group>";
+		};
+		FA90B18624A9989F00FCCB9D /* 泛型 */ = {
+			isa = PBXGroup;
+			children = (
+				FA90B18824A9989F00FCCB9D /* ZZLanguage.h */,
+				FA90B18A24A9989F00FCCB9D /* ZZLanguage.m */,
+				FA90B18724A9989F00FCCB9D /* ZZPerson.h */,
+				FA90B18924A9989F00FCCB9D /* ZZPerson.m */,
+			);
+			path = "泛型";
+			sourceTree = "<group>";
+		};
+		FA90B18D24A998BB00FCCB9D /* 弱引用集合 */ = {
+			isa = PBXGroup;
+			children = (
+				FA90B18E24A9991300FCCB9D /* ZZHuman.h */,
+				FA90B18F24A9991300FCCB9D /* ZZHuman.m */,
+			);
+			path = "弱引用集合";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +234,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA90B18B24A9989F00FCCB9D /* ZZPerson.m in Sources */,
 				B14C9B9E234D8C2600DAE2B3 /* ViewController.m in Sources */,
+				FA90B18C24A9989F00FCCB9D /* ZZLanguage.m in Sources */,
 				B14C9BA9234D8C2600DAE2B3 /* main.m in Sources */,
 				B14C9B9B234D8C2600DAE2B3 /* AppDelegate.m in Sources */,
+				FA90B19024A9991300FCCB9D /* ZZHuman.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +398,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BTPHRV9UY;
 				INFOPLIST_FILE = HighPerformance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +416,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BTPHRV9UY;
 				INFOPLIST_FILE = HighPerformance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
